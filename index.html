@@ -103,11 +103,6 @@
     .scroll-arrow svg {
       width: 1.5rem;
       height: 1.5rem;
-      transition: transform 0.4s ease;
-    }
-
-    .scroll-arrow[aria-expanded="true"] svg {
-      transform: rotate(180deg);
     }
 
     @keyframes bob {
@@ -185,15 +180,9 @@
     const essay = document.getElementById('essay');
 
     arrow.addEventListener('click', () => {
-      const opening = !essay.classList.contains('open');
-      if (opening) {
-        essay.classList.add('open');
-        arrow.setAttribute('aria-expanded', 'true');
-        arrow.setAttribute('aria-label', 'Back to top');
-        essay.scrollIntoView({ behavior: 'smooth' });
-      } else {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
+      essay.classList.add('open');
+      arrow.setAttribute('aria-expanded', 'true');
+      essay.scrollIntoView({ behavior: 'smooth' });
     });
   </script>
 </body>
