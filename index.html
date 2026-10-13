@@ -120,6 +120,9 @@
     .essay.open {
       display: block;
       min-height: 100vh;
+    }
+
+    .essay.open article {
       animation: reveal 0.9s ease both;
     }
 
@@ -151,7 +154,7 @@
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       .ambient, .scroll-arrow { animation: none; }
-      .essay.open { animation: none; }
+      .essay.open article { animation: none; }
     }
   </style>
 </head>
@@ -170,8 +173,8 @@
   <section class="essay" id="essay">
     <article>
       <h2>Our Story</h2>
-      <p>Essay text goes here. Replace this paragraph with the first part of the essay.</p>
-      <p>Add more paragraphs as needed by copying this one.</p>
+      <p>Imagine stepping into a sleek, humming chamber of steel and light known as the War Machine, a time machine built for one purpose: to let ordinary people experience the great conflicts of human history firsthand. With a turn of its brass dial, a traveler could find themselves crouched in the muddy trenches of the Somme, charging alongside Roman legions at the edge of the empire, or standing on the scorched plains of a war that hasn’t happened yet, where drones blot out the sky and soldiers wear armor that hums with energy. The War Machine doesn’t promise glory, only experience: the crack of musket fire, the weight of a shield, the fear and adrenaline that shaped the lives of millions. For historians, thrill-seekers, and the endlessly curious, it offers the ultimate lesson, which is that war is not a chapter in a textbook but something lived, survived, and remembered.</p>
+      <p>Yet the War Machine comes with two unbreakable rules, and they matter more than any weapon a traveler might carry. First, you must never kill a historical figure, because removing a single general, king, or revolutionary could unravel the timeline and erase entire nations, inventions, or even the traveler’s own existence. Second, you must never speak to your past or future relatives, since one careless conversation with a great-grandfather or a grandchild could change the choices that lead to your own birth. These rules turn every journey into a test of discipline as much as courage. A traveler can fight, run, and witness history, but must always remember that they are a guest in time, not its master. In the end, the true challenge of the War Machine is not surviving the battle, but returning home with history exactly as you left it.</p>
     </article>
   </section>
 
